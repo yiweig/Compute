@@ -1,0 +1,8 @@
+Compute - finds perfect numbers using multiple processes and shared memory  
+Implemented using POSIX and System V APIs  
+
+Manage.c : only one instance; manages shared memory segment to ensure there are no conflicts  
+
+Compute.c : up to 20 instances; command line argument specifies the number to begin searching for  
+
+Report.c : no limit on instances; reports on currently running Compute processes, the count of perfect numbers found, and the count of numbers not skipped (not tested)
